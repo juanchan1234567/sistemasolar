@@ -6,11 +6,122 @@
 <meta charset = 'utf-8'>
 
 </head>
-<link rel= 'stylesheet' type='text/css' href='../css/estiloastrologia.css'>
+<link rel= 'stylesheet' type='text/css' href='../css/estilos.css'>
 </html>
 
+<h1><body style = 'text-align:center;'><script>
+
+/*
+RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+Featured on JavaScript Kit
+For this script, visit http://www.javascriptkit.com
+*/
+
+// ********** cambia aquí
+
+var text="La astrología y la astronomía" // tu texto
+var speed=80 // velocidad de movimiento 
+
+
+if (document.all||document.getElementById){
+document.write('<span id="highlight">' + text + '</span>')
+var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight
+}
+else
+document.write(text)
+var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0")
+var r=1
+var g=1
+var b=1
+var seq=1
+function changetext(){
+rainbow="#"+hex[r]+hex[g]+hex[b]
+storetext.style.color=rainbow
+}
+function change(){
+if (seq==6){
+b--
+if (b==0)
+seq=1
+}
+if (seq==5){
+r++
+if (r==12)
+seq=6
+}
+if (seq==4){
+g--
+if (g==0)
+seq=5
+}
+if (seq==3){
+b++
+if (b==12)
+seq=4
+}
+if (seq==2){
+r--
+if (r==0)
+seq=3
+}
+if (seq==1){
+g++
+if (g==12)
+seq=2
+}
+changetext()
+}
+function starteffect(){
+if (document.all||document.getElementById)
+flash=setInterval("change()",speed)
+}
+starteffect()
+</script></body></h1>
+
 <body>
-<h1 style ='color:white;'>los horóscopos fueron creados gracias a la astronomía</h1>
+<h3></h3>
+<h5></h5>
+
+<h3>Diferencia entre la astrología y la astronomía</h3>
+<h5>Mucha gente confunde la astronomía y la astrología, al principio significaban lo mismo , pero fueron cogien do caminos diferentes. De hecho, la diferencia es tan grande que si a un astrónomo lo llamas astrólogo por error, lo más probable es que se ofenda. Y con razón.</h5>
+<h4>Astronomía</h4>
+<div align="center"><img src='../figuras/astronomia.jpg'></div>
+<h5>según la RAE: Ciencia que trata de los astros, de su movimiento y de las leyes que lo rigen.</h5>
+<h5>La astronomía estudia el universo a través del análisis de las posiciones, movimientos, estructuras y evolución de los astros.</h5>
+<h5>la astronomía tiene 2 ramas principales:</h5>
+<h5> La atronomía clásica que estudia las posiciones y los movimientos de los astros.</h5>
+<h5>Y la astrofísica que se utiliza actualmente, y consiste en estudiar las propiedades de los astros así como su origen y evolución, utilizando los métodos y las leyes de la física.</h5>
+<h4>Astrología</h4>
+<h5>La RAE dice: Estudio de la posición y del movimiento de los astros como medio para predecir hechos futuros y conocer el carácter de las personas.</h5>
+<h5>es una disciplina que intenta predecir los acontecimientos de la vida humana y su posición en el cielo</h5>
+<div align="center"><img src='../figuras/astrologia.jpg'></div>
+
+<h3>El horóscopo</h3>
+
+<h4>Origen</h4>
+<h5>Ya los  babilónicos, sumerios, indios y mayas habían descrito constelaciones uniendo puntos brillantes en el cielo según su imaginación.</h5>
+<h5>El primer registro con signos zodiacos apareció en una tablilla mesopotámica el en siglo VIII a.C., perteneciente a la llamada serie Mul Apin, que determinaba las constelaciones del camino de la Luna, y 17 grupos de cuerpos celestes, los cuales serían precursores de los signos del zodíaco.</h5>
+<h5>"La palabra zodiaco proviene de la palabra griega “zoon”, que significa animal y “kyklos”, que significa rueda. Se trata de una banda celeste de 18 grados de ancho que se desplaza por la eclíptica que es la línea curva por donde transcurre la tierra alrededor del sol, o por lo menos como se puede observar desde la tierra."</h5>
+<div align="center"><img src='../figuras/astronomia1.jpg'></div>
+<h4>definición</h4>
+<h5> El horóscopo y la carta natal, son métodos de predicción, se basa en la posición de los astros en el momento de nacimiento.
+Los horóscopos se basan en la posición de los planetas y las estrellas.
+Tu personalidad y tus sentimientos pueden variar por signo lunar, solar, ascendente, etc.</h5>
+<h4>Todos los símbolos y un poco de información</h4>
+<h5>Aries: El carnero. Su siclo empieza del 21 de marzo a 20 de abril. Es un elemento fuego, su planeta regente es Marte, es impulsivo, su polo es positivo, emisor y penetrante.</h5><h5>
+Tauro: El toro. Su siclo comienza el 20 de abril al 20 de mayo. Su elemento es tierra. Su planeta regente es Venus.</h5><h5>
+Géminis: Los gemelos. Su Siclo es del 21 de Mayo al 21 de julio. Es elemento aire. Su planeta regente es Mercurio, positivo-neutro.</h5><h5>
+Cáncer: El cangrejo. Empieza del 21 de Mayo al 21 de Junio. Esta cangrejo es signo agua. El “planeta” regente es la luna, es muy hogareño y estable.</h5><h5>
+Leo: El  poderoso león. Su siclo es del 24 de Julio al 23 de Agosto. Es elemento fuego. Este signo irradia ya que su planeta regente es el sol. Es positivo, un líder y muy estable.</h5><h5>
+Virgo: La virgen. Empieza del 23 de Agosto al 22 de Septiembre. Es elemento tierra. Su planeta regente es Mercurio.</h5><h5>
+Libra: La balanza. Empieza el 23 de Septiembre al 23 de Octubre. Es elemento aire. Su planeta regente es Venus.</h5><h5>
+ Escorpio: El escorpión. Empieza el 24 de Octubre al 21 de Noviembre. Es elemento agua.  Sus planetas regentes son Marte y Plutón.</h5><h5>
+Sagitario: El centauro. Empieza el 22 de Noviembre al 20 de Diciembre. Es elemento fuego. Su planeta regente es Júpiter.</h5><h5>
+Capricornio: La cabra. Empieza el 21 de Diciembre al 20 de Enero. Es elemento tierra. Su planeta regente es Saturno.</h5><h5>
+Acuario: El aguador. Del 21 de Enero al 19 de Febrero. Es elemento aire. Sus planetas regentes son Saturno y Urano.</h5><h5>
+Piscis: Los peces. Empieza el 20 de febrero al 20 de marzo. Es elemento agua. Sus planetas regentes son Júpiter y Neptuno.</h5>
+
+<h4>Aquí tienes el pronóstico de tu día dependiendo de tu nacimiento</h4>
 <p align="center">    <font color="#0C0505"><b><font class="navtext"><font face="Verdana" style="font-size:
 9pt;color:white;">HOROSCOPO</font><font style ='color:white;' class="content" size="1"><br /></font></font> <font class="navtext"><font style ='color:white;'face=    "Verdana"
 size="1">Descubre Tu Destino Para</font><font class="navtext"><br /></font> <font face="Verdana" size="1"><font style ='color:white;'  class="navtext">El Dia
@@ -56,4 +167,23 @@ Acuario        </option>        <option>            Piscis
 
 <table>    <tr>        <td height="27" class="edit_rb_footer" id="edit_rb_footer_1">    
 </td>    </tr></table>;
+
+
+
+
+<ul>
+<li><a href='../index.html'><img src='../figuras/inicio.jpg' width='50' height='50'>Inicio</a></li>
+</ul>
+<ul>
+<li><a href='historia.html'><img src='../figuras/historia.jpg' width='50' height='50'>Historia</a></li>
+</ul>
+<ul>
+<li><a href='planetas.html'><img src='../figuras/planetas.jpg' width='50' height='50'>Planetas</a></li>
+</ul>
+<ul>
+<li><a href='curiosidades.html'><img src='../figuras/curiosidades.jpg' width='50' height='50'>Curiosidades</a></li>
+</ul>
+<ul>
+<li><a href='unpocodehumor.html'><img src='../figuras/plutono.jpg' width='50' height='50'>Un poco de Humor</a></li>
+</ul>
 </body>
